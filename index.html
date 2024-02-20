@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Entrega semana 22-Ene Gonzalo Vicario</title>   
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+<body bgcolor="skyblue">
+  <center><img          src="https://www.robe.es/gestor/recursos/uploads/single/robe-nqp-foto.jpg"
+       alt="¡Nuevo single de Robe!"
+       width="400"
+       height="225,2" /></center>
+<div class="Bloque1" id="Bloque1" onmouseover="date()">
+  <h1>Nuevo pelotazo de Robe y su banda.</h1>
+  <h3>"Nada que Perder", otro gran hit de los Robe.</h3>
+  <p>Tras casi año y medio de sequía, la banda nos vuelve a obsequiar con una de sus obras maestras, titulada esta vez "Nada que perder".</p></div>
+  <div class="Bloque2" id="Bloque2" onmouseover="Cambiocolor()" onmouseout="Vuelvocolor()"><h3>Una letra inspiradora.</h3>
+  <p>Las continuas referencias de Robe a la sensibilidad, la literatura y la inspiración en sus canciones son ya algo común, y lo volvemos a apreciar en este nuevo single.
+    <ol>
+      <li>"Volvería a mis adicciones, si acaso fuera, si fuera necesario": Clara referencia a la inspiración y al amor ya observada en obras suyas como "La Ley Innata"</li>
+      <li>"Buscaré entuertos que deshacer y batallas que librar, perdidas de antemano": Referencia literaria ya utilizada previamente al "Quijote" de Cervantes.</li>
+      <li>"No puedo perder nada, que vengo de la nada, y solo vivo provisionalmente": Aquí también deja claro su marcado escepticismo hacia la felicidad de los tiempos que corren en su vida, siendo consciente de que puede no ser así siempre.</li></ol></p>
+  <h3>Algunas referencias.</h3>
+  <p>A continuación, dejamos algunos enlaces a algunas obras de Robe y Extremoduro relacionadas en contenido y musicalidad a este nuevo single, así como el link a la preventa del disco completo, que saldrá el próximo viernes 15 de diciembre:
+    <ul>
+      <li><a href="https://open.spotify.com/intl-es/track/3UGoPGvg9ZMtcpVVsUNhmX?si=270fdea063c84fba">"Desidia" de Extremoduro, en Spotify.</a></li>
+      <li><a href="https://open.spotify.com/intl-es/track/3VXUnRKkI0JMSRU3sY2on3?si=de17f324132a468a">"Contra todos" de Robe, en Spotify.</a></li>
+      <li><a href="https://tienda.robe.es/">Preventa del disco.</a></li></ul></p></div>
+<br>
+<center><button onclick="mostrarCréditos()">Créditos</button></center>
+<br>
+<center><button onclick="ocultarDiv()">Ocultar Div</button></center>
+<br>
+<center><button onclick="mostrarDiv()">Mostrar Div</button></center>
+<br>
+<center><button onclick="cambiarColor()">Cambiar Color</button></center>
+<br>
+<center><button id="getLocationBtn" onclick="Geolocalizar()">Mostrar Latitud y Longitud</button></center>
+<p id="coordinates"></p>
+<div id="map" style="height: 250px"></div>
+  <center><p><strong>Copyright 2023</strong></p></center>
+</body>
+</html>
