@@ -15,7 +15,6 @@ function Vuelvocolor()
 
 const getLocationBtn = document.getElementById('getLocationBtn');
 const coordinatesParagraph = document.getElementById('coordinates');
-
     getLocationBtn.addEventListener('click', () => {
       if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(Geolocalizar);
