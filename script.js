@@ -34,5 +34,4 @@ const coordinatesParagraph = document.getElementById('coordinates');
 
         L.marker([latitude, longitude]).addTo(map)
             .bindPopup('Tu ubicación actual.')
-            .openPopup();
-   }
+            .openPopup(); }
